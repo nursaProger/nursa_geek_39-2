@@ -5,7 +5,8 @@ from handlers import (
     start,
     questionnaire,
     group_actions,
-    registration
+    registration,
+    profile
 )
 
 start.register_start_handlers(dp=dp)
@@ -23,6 +24,7 @@ async def on_startup(_):
 start.register_start_handlers(dp=dp)
 questionnaire.register_questionnaire_handlers(dp=dp)
 registration.register_registration_handlers(dp=dp)
+profile.register_profile_handlers(dp=dp)
 group_actions.register_group_actions_handlers(dp=dp)
 
  
