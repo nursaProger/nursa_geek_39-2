@@ -22,6 +22,10 @@ async def start_keyboard():
         "Profile 🐲",
         callback_data="my_profile"
     )
+    reference_menu_button = InlineKeyboardButton(
+        "Reference Menu 💵",
+        callback_data="reference_menu"
+    )
     check_ban_button = InlineKeyboardButton(
         "Check Ban Status",
         callback_data="check_ban"
@@ -31,6 +35,7 @@ async def start_keyboard():
     markup.add(questionnaire_button)
     markup.add(random_profile_button)
     markup.add(my_profile_button)
+    markup.add(reference_menu_button)
     markup.add(check_ban_button)
     return markup
 
