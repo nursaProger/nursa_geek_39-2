@@ -38,11 +38,3 @@ async def start_keyboard():
     markup.add(reference_menu_button)
     markup.add(check_ban_button)
     return markup
-
-
-
-
-
-
-
-

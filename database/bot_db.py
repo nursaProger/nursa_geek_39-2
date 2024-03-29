@@ -184,10 +184,3 @@ class Database:
                 sql_queries.SELECT_REFERENCE_USER_INFO_QUERY,
                 (tg_id,)
             ).fetchone()
-
-
-
-
-
-
-
